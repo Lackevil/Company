@@ -1,0 +1,53 @@
+// -------- Mixins --------
+
+@use 'variables' as *;
+
+%logo {
+  display: inline-block;
+  color: $white;
+  font-weight: 500;
+  font-size: 2.7rem;
+  line-height: 130%;
+
+  @media ($tablet) {
+    font-size: 3.2rem;
+  }
+}
+
+%h1 {
+  color: $white;
+  font-weight: 600;
+  font-size: 5.6rem;
+  line-height: 130%;
+
+  @media ($tablet) {
+    font-size: 9.6rem;
+  }
+}
+
+@mixin p1($color: $black) {
+  color: $color;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+@mixin btn($text-color: $black, $bg-color: $white) {
+  display: inline-block;
+  background-color: $bg-color;
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 18rem;
+  color: $text-color;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 1;
+  text-align: center;
+  transition: 0.2s ease-in-out opacity;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// -------- Mixins --------
