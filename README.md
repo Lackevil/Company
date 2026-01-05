@@ -6,7 +6,7 @@
 
 ## Live
 
-- Live site URL: [live]()
+- Live site URL: [live](https://lackevil.github.io/Company/)
 
 ## Build with
 
